@@ -20,8 +20,4 @@ class DashboardController extends Controller
             return view('/pengunjung/tampilanpengunjung');
         }
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 053c729 (kedua-fixed)

@@ -15,10 +15,5 @@ Route::get('/', function(){
 
 // --ROUTE DASHBOARD--
 Route::get('/admin/dashboard', [DashboardController::class, 'index'])->middleware('auth');
-<<<<<<< HEAD
 Route::resource('admin/mitra', MitraController::class)->middleware('auth')->names('mitra');
-=======
-Route::resource('/admin/mitra', MitraController::class)->middleware('auth')->names('mitra');
-
->>>>>>> 053c729 (kedua-fixed)
 

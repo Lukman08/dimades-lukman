@@ -1,11 +1,7 @@
 <?php
-<<<<<<< HEAD
     namespace App\Http\Controller\Admin;
-=======
 
 namespace App\Http\Controllers\Admin;
-
->>>>>>> 053c729 (kedua-fixed)
 
 use Illuminate\Foundation\Http\FormRequest;
 
@@ -18,7 +14,4 @@ use Illuminate\Foundation\Http\FormRequest;
         public function update(FormRequest $request,$id);
         public function destroy($id);
     }
-<<<<<<< HEAD
 ?>
-=======
->>>>>>> 053c729 (kedua-fixed)

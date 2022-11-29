@@ -3,13 +3,8 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-<<<<<<< HEAD
-use Illuminate\Http\Request;
-use App\Http\Models\Mitra;
-=======
 use App\Models\Mitra;
 use Illuminate\Http\Request;
->>>>>>> 053c729 (kedua-fixed)
 use Illuminate\Support\Facades\Crypt;
 use Illuminate\Support\Facades\Session;
 

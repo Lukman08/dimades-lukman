@@ -11,16 +11,10 @@ class Mitra extends Model
     protected $table = 'mitras';
     protected $primarykey = 'id';
 
-<<<<<<< HEAD
-    protected $filelable = [
-        'name',
-        'namaAdminPt',
-=======
     protected $fillable = [
         'name',
         'namaAdminPt',
         'jk',
->>>>>>> 053c729 (kedua-fixed)
         'notelp',
         'email',
     ];

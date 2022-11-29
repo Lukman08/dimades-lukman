@@ -21,33 +21,19 @@
         <div class="" data-simplebar style="height: 100%;">
             <!-- sidebar menu -->
             <ul class="nav sidebar-inner" id="sidebar-menu">
-<<<<<<< HEAD
-                <li class="{{Request::path()=="home" ? 'active' : ''}}">
-                    <a class="sidenav-item-link" href="{{route('home')}}" aria-expanded="false" aria-controls="dashboard">
-=======
                 <li class="{{ Request::path()=="/>home" ? 'active' : ''}}"">
                     <a class="sidenav-item-link" href="{{ route('home') }}" aria-expanded="false" aria-controls="dashboard">
->>>>>>> 053c729 (kedua-fixed)
                         <i class="mdi mdi-view-dashboard-outline"></i>
                         <span class="nav-text">Dashboard</span> <b class="caret"></b>
                     </a>
                 </li>
-<<<<<<< HEAD
-                <li class="{{Request::path()=="admin/mitra" ? 'active' : ''}}">
-                    <a class="sidenav-item-link" href="{{route('mitra.index')}}" aria-expanded="false" aria-controls="dashboard">
-=======
                 <li class="{{ Request::path()=="admin/>mitra" ? 'active' : ''}}">
                     <a class="sidenav-item-link" href="{{ route('mitra.index') }}" aria-expanded="false" aria-controls="dashboard">
->>>>>>> 053c729 (kedua-fixed)
                         <i class="mdi mdi-view-dashboard-outline"></i>
                         <span class="nav-text">Mitra</span> <b class="caret"></b>
                     </a>
                 </li>
             </ul>
-<<<<<<< HEAD
-=======
-            
->>>>>>> 053c729 (kedua-fixed)
         </div>
 
         <div class="sidebar-footer">

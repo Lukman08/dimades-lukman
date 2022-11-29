@@ -2,10 +2,7 @@
 @section('content')
     <form action="{{route('mitra.update',Crypt::encrypt($data->id))}}" method="post">
     {{csrf_field()}}
-<<<<<<< HEAD
-=======
     {{method_field('PUT')}}
->>>>>>> 053c729 (kedua-fixed)
     <div class="content">
         <div class="row">
             <div class="col-lg-6">
@@ -22,17 +19,10 @@
                     </div>
                     <div class="form-group">
                         <label class="form-label">Nama Admin PT</label>
-<<<<<<< HEAD
-                        <input type="text" name="namaAdminPT" class="form-control" value="{{$data->namaAdminPT}}">
-                    </div>
-                    <div class="form-group">
-                        <label class="form-label">Nama Admin PT</label>
-=======
                         <input type="text" name="namaAdminPT" class="form-control" value="{{$data->namaAdminPt}}">
                     </div>
                     <div class="form-group">
                         <label class="form-label">Jenis Kelamin</label>
->>>>>>> 053c729 (kedua-fixed)
                         <select class="form-control" name="jk">
                             <option>Pilih Jenis Kelamin</option>
                             <option value="Laki-Laki" {{$data->jk == "Laki-laki" ? "selected" : ""}}>Laki-Laki</option>
