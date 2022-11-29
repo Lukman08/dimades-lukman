@@ -29,8 +29,14 @@
                 </li>
                 <li class="{{ Request::path()=="admin/>mitra" ? 'active' : ''}}">
                     <a class="sidenav-item-link" href="{{ route('mitra.index') }}" aria-expanded="false" aria-controls="dashboard">
-                        <i class="mdi mdi-view-dashboard-outline"></i>
+                        <i class="mdi mdi-domain"></i>
                         <span class="nav-text">Mitra</span> <b class="caret"></b>
+                    </a>
+                </li>
+                <li class="{{ Request::path()=="admin/>kategori" ? 'active' : ''}}">
+                    <a class="sidenav-item-link" href="{{ route('categories.index') }}" aria-expanded="false" aria-controls="dashboard">
+                        <i class="mdi mdi-note-multiple-outline"></i>
+                        <span class="nav-text">Kategori</span> <b class="caret"></b>
                     </a>
                 </li>
             </ul>

@@ -1,9 +1,10 @@
 <?php
 
-use App\Http\Controllers\Admin\DashboardController;
-use App\Http\Controllers\Admin\MitraController;
-use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Admin\MitraController;
+use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Admin\CategoriesController;
 
 Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
@@ -16,4 +17,4 @@ Route::get('/', function(){
 // --ROUTE DASHBOARD--
 Route::get('/admin/dashboard', [DashboardController::class, 'index'])->middleware('auth');
 Route::resource('admin/mitra', MitraController::class)->middleware('auth')->names('mitra');
-
+Route::resource('admin/categories', CategoriesController::class)->middleware('auth')->names('categories');
