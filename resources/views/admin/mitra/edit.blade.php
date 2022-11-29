@@ -19,7 +19,7 @@
                     </div>
                     <div class="form-group">
                         <label class="form-label">Nama Admin PT</label>
-                        <input type="text" name="namaAdminPT" class="form-control" value="{{$data->namaAdminPt}}">
+                        <input type="text" name="namaAdminPt" class="form-control" value="{{$data->namaAdminPt}}">
                     </div>
                     <div class="form-group">
                         <label class="form-label">Jenis Kelamin</label>

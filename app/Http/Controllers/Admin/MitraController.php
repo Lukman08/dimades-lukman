@@ -92,9 +92,9 @@ class MitraController implements ControllerInterface
             Session::flash('success',"Berhasil Update");
             return redirect()->route('mitra.index');
             if ($data->update($request->all())) {
-                Session::flash('success',"Berhasil Simpan");
+                Session::flash('success',"Berhasil Edit");
             }else{
-                Session::flash('error',"Gagal Simpan");
+                Session::flash('error',"Gagal Edit");
             }
             return redirect()->route('mitra.index');
         } catch (\Throwable $th) {
@@ -113,9 +113,9 @@ class MitraController implements ControllerInterface
     {
         $data = Mitra::findOrFail(Crypt::decrypt($id));
         if ($data->delete()) {
-            Session::flash('success',"Berhasil Simpan");
+            Session::flash('success',"Berhasil Hapus");
         }else{
-            Session::flash('error',"Gagal Simpan");
+            Session::flash('error',"Gagal Hapus");
         }
         return redirect()->route('mitra.index');
     }

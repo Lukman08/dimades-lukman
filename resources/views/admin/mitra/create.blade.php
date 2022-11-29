@@ -18,10 +18,10 @@
                     </div>
                     <div class="form-group">
                         <label class="form-label">Nama Admin PT</label>
-                        <input type="text" name="namaAdminPT" class="form-control" value="{{old('namaAdminPT')}}">
+                        <input type="text" name="namaAdminPt" class="form-control" value="{{old('namaAdminPT')}}">
                     </div>
                     <div class="form-group">
-                        <label class="form-label">Nama Admin PT</label>
+                        <label class="form-label">Jenis Kelamin</label>
                         <select class="form-control" name="jk">
                             <option>Pilih Jenis Kelamin</option>
                             <option value="Laki-Laki" {{old('jk') == "Laki-laki" ? "selected" : ""}}>Laki-Laki</option>
