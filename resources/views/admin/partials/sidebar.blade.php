@@ -21,7 +21,7 @@
         <div class="" data-simplebar style="height: 100%;">
             <!-- sidebar menu -->
             <ul class="nav sidebar-inner" id="sidebar-menu">
-                <li class="{{ Request::path()=="/>home" ? 'active' : ''}}"">
+                <li class="{{ Request::path()=="/>home" ? 'active' : ''}}">
                     <a class="sidenav-item-link" href="{{ route('home') }}" aria-expanded="false" aria-controls="dashboard">
                         <i class="mdi mdi-view-dashboard-outline"></i>
                         <span class="nav-text">Dashboard</span> <b class="caret"></b>

@@ -18,3 +18,6 @@ Route::get('/', function(){
 Route::get('/admin/dashboard', [DashboardController::class, 'index'])->middleware('auth');
 Route::resource('admin/mitra', MitraController::class)->middleware('auth')->names('mitra');
 Route::resource('admin/categories', CategoriesController::class)->middleware('auth')->names('categories');
+Route::get('/mami', function(){
+    return view('admin.mami.index');
+});
