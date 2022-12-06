@@ -23,19 +23,19 @@
                                 @php
                                     $i = 0;
                                 @endphp
-                                {{-- @forelse($data as $row) --}}
+                                @forelse($products as $row)
                                     <tr>
                                         <td class="text-center">{{ ++$i }}</td>
-                                        <td>produk</td>
-                                        <td>kategori</td>
-                                        <td>mitra</td>
-                                        <td>harga</td>
-                                        <td>stok</td>
+                                        <td>{{$row->name}}</td>
+                                        <td>{{$row->category->name}}</td>
+                                        <td>{{$row->mitra->name}}</td>
+                                        <td>{{$row->price}}</td>
+                                        <td>{{$row->stock}}</td>
                                         <td class="text-center">
-                                            <form action=""
+                                            <form action="{{route('food.destroy', Crypt::encrypt($row->id))}}"
                                                 method="POST">
                                                 <a class="btn btn-warning btn-sm"
-                                                    href="">Edit</a>
+                                                    href="{{route('food.edit', Crypt::encrypt($row->id))}}">Edit</a>
                                                 @csrf
                                                 @method('DELETE')
                                                 <button type="submit" class="btn btn-danger btn-sm"
@@ -43,17 +43,17 @@
                                             </form>
                                         </td>
                                     </tr>
-                                {{-- @empty --}}
+                                @empty
                                     <tr>
                                         <td colspan="8">No record found</td>
                                     </tr>
-                                {{-- @endforelse --}}
+                                @endforelse
                             </tbody>
                         </table>
-                        {{-- {{ $data->links() }} --}}
+                        {{ $products->links() }}
                     </div>
                     <div class="card-footer text-right">
-                        <a href="" class="btn btn-primary">Tambah Data</a>
+                        <a href="{{ route('food.create') }}" class="btn btn-primary">Tambah Data</a>
                     </div>
                 </div>
             </div>
