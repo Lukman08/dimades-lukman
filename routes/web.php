@@ -6,6 +6,7 @@ use App\Http\Controllers\Admin\MitraController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\CategoriesController;
 use App\Http\Controllers\Admin\FoodProductController;
+use App\Http\Controllers\Admin\ItemProductController;
 
 Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
@@ -20,3 +21,4 @@ Route::get('/admin/dashboard', [DashboardController::class, 'index'])->middlewar
 Route::resource('admin/mitra', MitraController::class)->middleware('auth')->names('mitra');
 Route::resource('admin/categories', CategoriesController::class)->middleware('auth')->names('categories');
 Route::resource('admin/food', FoodProductController::class)->middleware('auth')->names('food');
+Route::resource('admin/item', ItemProductController::class)->middleware('auth')->names('item');

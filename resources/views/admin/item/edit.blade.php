@@ -1,7 +1,7 @@
 @extends('admin.layout')
 
 @section('content')
-<form action="{{route('food.update',Crypt::encrypt($data->id))}}" method="POST">
+<form action="{{route('item.update',Crypt::encrypt($data->id))}}" method="POST">
     @csrf
     {{ method_field('PUT') }}
     <div class="content">
@@ -43,7 +43,7 @@
                         <input type="hidden" name="type" value="1">
                         <div class="form-footer pt-5 border-top">
                             <button type="submit" class="btn btn-primary btn-default">Simpan</button>
-                            <a href="{{route('food.index')}}" class="btn btn-secondary btn-default">Kembali</a>
+                            <a href="{{route('item.index')}}" class="btn btn-secondary btn-default">Kembali</a>
                         </div>
                     </div>
                 </div>

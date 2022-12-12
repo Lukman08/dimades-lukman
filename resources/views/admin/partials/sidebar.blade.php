@@ -21,22 +21,34 @@
         <div class="" data-simplebar style="height: 100%;">
             <!-- sidebar menu -->
             <ul class="nav sidebar-inner" id="sidebar-menu">
-                <li class="{{ Request::path()=="/>home" ? 'active' : ''}}">
+                <li class="{{ Request::path()=="home" ? 'active' : ''}}">
                     <a class="sidenav-item-link" href="{{ route('home') }}" aria-expanded="false" aria-controls="dashboard">
                         <i class="mdi mdi-view-dashboard-outline"></i>
                         <span class="nav-text">Dashboard</span> <b class="caret"></b>
                     </a>
                 </li>
-                <li class="{{ Request::path()=="admin/>mitra" ? 'active' : ''}}">
+                <li class="{{ Request::path()=="admin/mitra" ? 'active' : ''}}">
                     <a class="sidenav-item-link" href="{{ route('mitra.index') }}" aria-expanded="false" aria-controls="dashboard">
                         <i class="mdi mdi-domain"></i>
                         <span class="nav-text">Mitra</span> <b class="caret"></b>
                     </a>
                 </li>
-                <li class="{{ Request::path()=="admin/>kategori" ? 'active' : ''}}">
+                <li class="{{ Request::path()=="admin/categories" ? 'active' : ''}}">
                     <a class="sidenav-item-link" href="{{ route('categories.index') }}" aria-expanded="false" aria-controls="dashboard">
                         <i class="mdi mdi-note-multiple-outline"></i>
                         <span class="nav-text">Kategori</span> <b class="caret"></b>
+                    </a>
+                </li>
+                <li class="{{ Request::path()=="admin/food" ? 'active' : ''}}">
+                    <a class="sidenav-item-link" href="{{ route('food.index') }}" aria-expanded="false" aria-controls="dashboard">
+                        <i class="mdi mdi-food-variant"></i>
+                        <span class="nav-text">Makanan & Minuman</span> <b class="caret"></b>
+                    </a>
+                </li>
+                <li class="{{ Request::path()=="admin/item" ? 'active' : ''}}">
+                    <a class="sidenav-item-link" href="{{ route('item.index') }}" aria-expanded="false" aria-controls="dashboard">
+                        <i class="mdi mdi-sitemap"></i>
+                        <span class="nav-text">Item</span> <b class="caret"></b>
                     </a>
                 </li>
             </ul>
